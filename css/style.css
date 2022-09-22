@@ -1,0 +1,172 @@
+.header {
+  display: flex;
+}
+.webstudio {
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  padding-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.web {
+  color: #2196f3;
+}
+.studio {
+  color: black;
+}
+.header-menu {
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 93px;
+}
+.header-list {
+  margin-right: 54px;
+}
+.header-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.header-menu-2 {
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  padding-right: 215px;
+  padding-left: 335px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-list-2 {
+  margin-right: 50px;
+}
+.header-link-2 {
+  text-decoration: none;
+  font-size: 14px;
+  color: #757575;
+}
+.hero-logo {
+  font-family: 'Roboto', serif;
+  font-weight: 900;
+  /* color: #fff; */
+  margin-left: 452px;
+  margin-right: 452px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.hero-button {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  margin-left: 724px;
+  margin-right: 724px;
+  margin-bottom: 210px;
+}
+.benefits-menu {
+  display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-top: 94px;
+}
+.benefits-list {
+  list-style: none;
+  margin-left: 30px;
+}
+.benefit {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  color: #212121;
+}
+.benefit-text {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  color: #757575;
+}
+.what-we-do {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  color: #212121;
+  margin-right: 617px;
+  margin-left: 617px;
+  margin-top: 94px;
+}
+.what-we-do-menu {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+.what-we-do-list {
+  margin-right: 30px;
+}
+.our-team {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  color: #212121;
+  margin-left: 668px;
+  margin-right: 668px;
+  margin-top: 188px;
+}
+.team-menu {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+.team-list-worker {
+  margin-right: 30px;
+}
+.image-worker {
+  width: 270px;
+  height: 260px;
+}
+.worker {
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+}
+.work {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+}
+.footer {
+  margin-top: 154px;
+  margin-left: 215px;
+}
+.webstudio2 {
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+}
+.web2 {
+  color: #2196f3;
+}
+.studio2 {
+  color: black;
+}
+.address {
+  font-style: none;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  /* color: #fff; */
+}
+.footer-menu {
+  list-style: none;
+}
+.footer-list {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  margin-left: -40px;
+}
+.footer-link {
+  text-decoration: none;
+  color: #757575;
+}
