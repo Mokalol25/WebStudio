@@ -176,6 +176,9 @@ ul {
   margin-left: 30px;
   text-align: center;
 }
+.container-worker {
+  outline: red solid;
+}
 .team-list-worker:first-child {
   margin-left: 0;
 }
@@ -202,6 +205,7 @@ ul {
   font-weight: 700;
   text-decoration: none;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 .web2 {
   color: #2196f3;
@@ -213,10 +217,14 @@ ul {
   font-style: none;
   font-family: 'Roboto', serif;
   font-weight: 400;
-  /* color: #fff; */
+  color: #fff;
+  margin-bottom: 9px;
 }
-.footer-menu {
-  /* list-style: none; */
+.footer-list {
+  margin-bottom: 9px;
+}
+.footer-list:last-child {
+  margin-bottom: 0;
 }
 .footer-list {
   font-family: 'Roboto', serif;

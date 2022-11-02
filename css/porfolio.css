@@ -81,7 +81,7 @@ ul {
 .button-menu {
   list-style: none;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .butten-list {
   margin-left: 8px;
@@ -150,6 +150,7 @@ ul {
   font-weight: 700;
   text-decoration: none;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 .web2 {
   color: #2196f3;
@@ -161,10 +162,14 @@ ul {
   font-style: none;
   font-family: 'Roboto', serif;
   font-weight: 400;
-  /* color: #fff; */
+  color: #fff;
+  margin-bottom: 9px;
 }
-.footer-menu {
-  /* list-style: none; */
+.footer-list {
+  margin-bottom: 9px;
+}
+.footer-list:last-child {
+  margin-bottom: 0;
 }
 .footer-list {
   font-family: 'Roboto', serif;
