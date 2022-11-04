@@ -196,6 +196,7 @@ ul {
 }
 .footer {
   background-color: #2f303a;
+  height: 252px;
 }
 .footer .container {
   padding-top: 94px;
@@ -224,12 +225,12 @@ ul {
   margin-bottom: 9px;
 }
 .footer-list:last-child {
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 .footer-list {
   font-family: 'Roboto', serif;
   font-weight: 400;
-  margin-left: -40px;
+  margin-left: 0px;
 }
 .footer-link {
   text-decoration: none;
