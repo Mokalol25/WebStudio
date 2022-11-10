@@ -234,9 +234,23 @@ ul {
   width: 44px;
   height: 44px;
 }
-.social-link:hover {
+.social-background {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+.social-background:hover {
   background-color: #2196f3;
-  border-radius: 90px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
 }
 /* all time clients */
 .all-time-clients .container {
@@ -256,9 +270,25 @@ ul {
   justify-content: center;
 }
 .client-link {
-  margin-left: 60px;
+  align-items: center;
+  justify-content: center;
 }
-
+.client-background {
+  width: 170px;
+  height: 90px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-list {
+  margin-right: 30px;
+}
+.client-list:last-child {
+  margin-right: 0;
+}
 .footer {
   background-color: #2f303a;
 }
@@ -286,18 +316,59 @@ ul {
   color: #fff;
   margin-bottom: 9px;
 }
-.footer-list {
+.footer-contacts-list {
   margin-bottom: 9px;
 }
-.footer-list:last-child {
+.footer-contacts-list:last-child {
   margin-bottom: 60px;
 }
-.footer-list {
+.footer-contacts-list {
   font-family: 'Roboto', serif;
   font-weight: 400;
   margin-left: 0px;
 }
-.footer-link {
+.footer-contacts-link {
   text-decoration: none;
   color: #757575;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-list {
+  margin-right: 70px;
+}
+.footer-list:last-child {
+  margin-right: 0;
+}
+.join-to-us-menu {
+  display: flex;
+  margin-top: 20px;
+}
+.join-to-us {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.join-to-us-list {
+  width: 44px;
+  height: 44px;
+}
+.join-to-us-background {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+.join-to-us-background:hover {
+  background-color: #2196f3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
 }
