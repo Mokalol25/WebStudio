@@ -71,6 +71,9 @@ ul {
 .header-contact:first-child {
   margin-right: 50px;
 }
+.header-contact-link:hover {
+  color: #2196f3;
+}
 .header-contact-link {
   text-decoration: none;
   font-size: 14px;
@@ -79,14 +82,30 @@ ul {
 
 /* section hero */
 .hero-section {
-  background-color: #2f303a;
   text-align: center;
 }
 .hero-section .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.hero-box {
+  width: 100%;
+  height: 600px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin: 10px auto;
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.5),
+      rgba(128, 128, 128, 0.5)
+    ),
+    url(../img/background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .hero-logo {
+  font-size: 44px;
   font-weight: 900;
   text-align: center;
   margin-right: auto;
@@ -102,6 +121,7 @@ ul {
   font-weight: 700;
   background-color: #2196f3;
   border: none;
+  border-radius: 4px;
 }
 
 /* section benefits */
@@ -121,10 +141,18 @@ ul {
 .benefits-list:first-child {
   margin-left: 0;
 }
+.benefit-image {
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
 .benefit {
   /* font-family: 'Roboto', serif; */
   font-weight: 700;
   color: #212121;
+  margin-bottom: 10px;
 }
 .benefit-text {
   /* font-family: 'Roboto', serif; */
@@ -158,6 +186,7 @@ ul {
 
 /* our team section */
 .our-team-section {
+  background-color: #f5f4fa;
 }
 .our-team-section .container {
   padding-top: 94px;
@@ -175,6 +204,9 @@ ul {
 .team-list-worker {
   margin-left: 30px;
   text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .container-worker {
   outline: red solid;
@@ -194,12 +226,78 @@ ul {
   /* font-family: 'Roboto', serif; */
   font-weight: 400;
 }
+.social-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 44px;
+}
+.social-list {
+  width: 44px;
+  height: 44px;
+}
+.social-background {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+.social-background:hover {
+  background-color: #2196f3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+/* all time clients */
+.all-time-clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.client-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-link {
+  align-items: center;
+  justify-content: center;
+}
+.client-background {
+  width: 170px;
+  height: 90px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-list {
+  margin-right: 30px;
+}
+.client-list:last-child {
+  margin-right: 0;
+}
 .footer {
   background-color: #2f303a;
-  height: 252px;
 }
 .footer .container {
   padding-top: 94px;
+  padding-bottom: 60px;
 }
 .webstudio2 {
   font-family: 'Raleway', serif;
@@ -221,18 +319,59 @@ ul {
   color: #fff;
   margin-bottom: 9px;
 }
-.footer-list {
+.footer-contacts-list {
   margin-bottom: 9px;
 }
-.footer-list:last-child {
+.footer-contacts-list:last-child {
   margin-bottom: 60px;
 }
-.footer-list {
+.footer-contacts-list {
   font-family: 'Roboto', serif;
   font-weight: 400;
   margin-left: 0px;
 }
-.footer-link {
+.footer-contacts-link {
   text-decoration: none;
   color: #757575;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-list {
+  margin-right: 70px;
+}
+.footer-list:last-child {
+  margin-right: 0;
+}
+.join-to-us-menu {
+  display: flex;
+  margin-top: 20px;
+}
+.join-to-us {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.join-to-us-list {
+  width: 44px;
+  height: 44px;
+}
+.join-to-us-background {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+.join-to-us-background:hover {
+  background-color: #2196f3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
 }
