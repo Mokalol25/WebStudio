@@ -93,11 +93,12 @@ ul {
   height: 600px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+
   border-radius: 4px;
   margin: 10px auto;
   background-image: linear-gradient(
-      rgba(128, 128, 128, 0.5),
-      rgba(128, 128, 128, 0.5)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../img/background-img.jpg);
   background-size: cover;
@@ -141,13 +142,33 @@ ul {
 .benefits-list:first-child {
   margin-left: 0;
 }
-.benefit-image {
-  align-items: center;
+.benefits-list::before {
+  display: block;
+  content: '';
   background-color: #f5f4fa;
   border-radius: 4px;
   width: 270px;
   height: 120px;
+  background-position: center;
+  margin-bottom: 20px;
 }
+.benefits-list:nth-child(1)::before {
+  background-image: url(../img-icons/antenna.png);
+  background-repeat: no-repeat;
+}
+.benefits-list:nth-child(2)::before {
+  background-image: url(../img-icons/clock.png);
+  background-repeat: no-repeat;
+}
+.benefits-list:nth-child(3)::before {
+  background-image: url(../img-icons/diagram.png);
+  background-repeat: no-repeat;
+}
+.benefits-list:nth-child(4)::before {
+  background-image: url(../img-icons/astronaut.png);
+  background-repeat: no-repeat;
+}
+
 .benefit {
   /* font-family: 'Roboto', serif; */
   font-weight: 700;
@@ -197,6 +218,7 @@ ul {
   color: #212121;
   text-align: center;
   margin-bottom: 50px;
+  font-size: 36px;
 }
 .team-menu {
   display: flex;
@@ -217,10 +239,12 @@ ul {
 .image-worker {
   width: 270px;
   height: 260px;
+  margin-bottom: 30px;
 }
 .worker {
   /* font-family: 'Roboto', serif; */
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .work {
   /* font-family: 'Roboto', serif; */
@@ -304,7 +328,6 @@ ul {
   font-weight: 700;
   text-decoration: none;
   font-size: 26px;
-  margin-bottom: 20px;
 }
 .web2 {
   color: #2196f3;
@@ -313,7 +336,8 @@ ul {
   color: white;
 }
 .address {
-  font-style: none;
+  margin-top: 20px;
+  font-style: normal;
   font-family: 'Roboto', serif;
   font-weight: 400;
   color: #fff;
