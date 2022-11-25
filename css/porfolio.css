@@ -98,15 +98,30 @@ ul {
   display: flex;
   justify-content: center;
 }
-.butten-list {
+.button-list {
   margin-left: 8px;
 }
-.butten-list:first-child {
+.button-list:first-child {
   margin-left: 0;
 }
-.butten-link {
+.button-link {
+  background-color: #f5f4fa;
+  border: none;
+  height: 38px;
+  border-radius: 4px;
+}
+.button-link:hover {
+  background-color: #2196f3;
+}
+.button-logo:hover {
+  color: #fff;
+}
+.button-logo {
   font-weight: 500;
   color: #212121;
+  margin-left: 22px;
+  margin-right: 23px;
+  font-size: 16px;
 }
 
 /* services section */
@@ -147,6 +162,7 @@ ul {
 .service-link {
   font-weight: 700;
   color: #212121;
+  margin-bottom: 4px;
 }
 .service-link2 {
   font-weight: 400;
@@ -166,7 +182,7 @@ ul {
   font-weight: 700;
   text-decoration: none;
   font-size: 26px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .web2 {
   color: #2196f3;
@@ -179,6 +195,7 @@ ul {
   font-family: 'Roboto', serif;
   font-weight: 400;
   color: #fff;
+  margin-top: 20px;
   margin-bottom: 9px;
 }
 .footer-list {
