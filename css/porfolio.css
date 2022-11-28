@@ -15,6 +15,15 @@ body {
 ul {
   list-style: none;
 }
+p {
+  font-family: 'Roboto', serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', serif;
+}
 
 .container {
   width: 1200px;
@@ -85,6 +94,12 @@ ul {
   font-size: 14px;
   color: #757575;
 }
+.contact {
+  fill: #757575;
+}
+.contact:hover {
+  fill: #2196f3;
+}
 
 /* buttons section */
 .buttons-section .container {
@@ -135,22 +150,10 @@ ul {
   display: flex;
   margin-right: auto;
 }
-.service-menu-2 {
-  list-style: none;
-  display: flex;
-  margin-top: 30px;
-  /* margin-left: 215px;
-  margin-right: 215px; */
-}
-.service-menu-3 {
-  list-style: none;
-  display: flex;
-  margin-top: 30px;
-  /* margin-left: 215px;
-  margin-right: 215px; */
-}
 .service-list {
   margin-left: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 .service-list:first-child {
   margin-left: 0;
@@ -161,28 +164,30 @@ ul {
 }
 .service-link {
   font-weight: 700;
+  font-size: 18px;
   color: #212121;
   margin-bottom: 4px;
 }
 .service-link2 {
   font-weight: 400;
+  font-size: 16px;
   color: #757575;
+  margin-bottom: 20px;
 }
 
 /* footer */
 .footer {
   background-color: #2f303a;
-  height: 252px;
 }
 .footer .container {
   padding-top: 94px;
+  padding-bottom: 60px;
 }
 .webstudio2 {
   font-family: 'Raleway', serif;
   font-weight: 700;
   text-decoration: none;
   font-size: 26px;
-  /* margin-bottom: 20px; */
 }
 .web2 {
   color: #2196f3;
@@ -191,25 +196,74 @@ ul {
   color: white;
 }
 .address {
-  font-style: none;
+  margin-top: 20px;
+  font-style: normal;
   font-family: 'Roboto', serif;
   font-weight: 400;
   color: #fff;
-  margin-top: 20px;
   margin-bottom: 9px;
 }
-.footer-list {
+.footer-contacts-list {
   margin-bottom: 9px;
 }
-.footer-list:last-child {
+.footer-contacts-list:last-child {
   margin-bottom: 60px;
 }
-.footer-list {
+.footer-contacts-list {
   font-family: 'Roboto', serif;
   font-weight: 400;
   margin-left: 0px;
 }
-.footer-link {
+.footer-contacts-link {
   text-decoration: none;
   color: #757575;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-list {
+  margin-right: 70px;
+}
+.footer-list:last-child {
+  margin-right: 0;
+}
+.join-to-us-menu {
+  display: flex;
+  margin-top: 20px;
+}
+.join-to-us {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.join-to-us-list {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  justify-content: center;
+}
+.join-to-us:last-child {
+  margin-right: 0;
+}
+.join-to-us-defs {
+  fill: #fff;
+}
+.join-to-us-background {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+.join-to-us-background:hover {
+  background-color: #2196f3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
 }

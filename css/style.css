@@ -79,6 +79,12 @@ ul {
   font-size: 14px;
   color: #757575;
 }
+.contact {
+  fill: #757575;
+}
+.contact:hover {
+  fill: #2196f3;
+}
 
 /* section hero */
 .hero-section {
@@ -305,6 +311,10 @@ ul {
 .client-link {
   align-items: center;
   justify-content: center;
+  fill: #757575;
+}
+.client-link:hover {
+  fill: #2196f3;
 }
 .client-background {
   width: 170px;
@@ -322,6 +332,8 @@ ul {
 .client-list:last-child {
   margin-right: 0;
 }
+
+/* footer */
 .footer {
   background-color: #2f303a;
 }
