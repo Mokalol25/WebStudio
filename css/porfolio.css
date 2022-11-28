@@ -94,6 +94,9 @@ h4 {
   font-size: 14px;
   color: #757575;
 }
+.contact-svg {
+  margin-right: 10px;
+}
 .contact {
   fill: #757575;
 }
@@ -149,6 +152,7 @@ h4 {
   list-style: none;
   display: flex;
   margin-right: auto;
+  justify-content: center;
 }
 .service-list {
   margin-left: 30px;
