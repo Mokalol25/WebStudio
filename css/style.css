@@ -136,6 +136,71 @@ ul {
   color: #fff;
 }
 
+.background-modal {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.backdrop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-left: 490px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.close-svg {
+  width: 11px;
+  height: 11px;
+}
+.take-your-information {
+  padding-top: 40px;
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 20px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.your-information-label {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #757575;
+  margin-right: 800px;
+  margin-left: 40px;
+}
+.your-information {
+  padding-left: 200px;
+}
+.send-information {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 /* section benefits */
 .benefits-section {
 }
@@ -216,6 +281,36 @@ ul {
 }
 .what-we-do-list:first-child {
   margin-left: 0;
+}
+.overley {
+  position: relative;
+}
+.overley::before {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.overley-background {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  bottom: 1%;
+  opacity: 0;
+}
+.overley-background:hover {
+  opacity: 1;
+}
+.what-we-do-position {
+  position: absolute;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  width: 100%;
+  padding-top: 27px;
+  padding-left: 94px;
+  /* opacity: 0; */
 }
 
 /* our team section */

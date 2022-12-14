@@ -39,7 +39,7 @@
         <ul class="header-contacts">
           <li class="header-contact">
             <svg width="16px" height="12px" class="contact-svg">
-              <use href="./contacts/contacts.svg#envelope"></use>
+              <use href="./subol-defs.img/symbol-defs.svg#gmail"></use>
             </svg>
             <a href="mailto:info@devstudio.com" class="header-contact-link"
               >info@devstudio.com</a
@@ -47,7 +47,7 @@
           </li>
           <li class="header-contact">
             <svg width="10px" height="16px" class="contact-svg">
-              <use href="./contacts/contacts.svg#smartphone"></use>
+              <use href="./subol-defs.img/symbol-defs.svg#phone"></use>
             </svg>
             <a href="tel:+380961111111" class="header-contact-link"
               >+38 096 111 11 11</a
@@ -67,6 +67,77 @@
               <button class="hero-button" type="button">
                 Замовити послугу
               </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="backdrop">
+            <div class="background-modal">
+              <button type="button" class="close">
+                <svg class="close-svg">
+                  <use
+                    href="./img-icons/symbol-defs.svg#close"
+                    class="close-use"
+                  ></use>
+                </svg>
+              </button>
+              <br />
+              <h6 class="take-your-information">
+                Залиште свої дані, ми Вам зателефонуємо
+              </h6>
+              <ul class="your-information-menu">
+                <li class="your-information-list">
+                  <label for="name" class="your-information-label">Ім'я</label>
+                  <br />
+                  <svg class="backdrop-svg" width="12" height="12">
+                    <use
+                      href="./img-icons/symbol-defs.svg#people"
+                      class="backdrop-use"
+                    ></use>
+                  </svg>
+                  <input id="name" type="text" class="your-information" />
+                </li>
+                <li class="your-information-list">
+                  <label for="phone" class="your-information-label"
+                    >Телефон</label
+                  >
+                  <br />
+                  <svg class="backdrop-svg" width="13" height="13">
+                    <use
+                      href="./img-icons/symbol-defs.svg#phone"
+                      class="backdrop-use"
+                    ></use>
+                  </svg>
+                  <input id="phone" type="text" class="your-information" />
+                </li>
+                <li class="your-information-list">
+                  <label for="gmail" class="your-information-label"
+                    >Пошта</label
+                  >
+                  <br />
+                  <svg class="backdrop-svg" width="15" height="12">
+                    <use
+                      href="./img-icons/symbol-defs.svg#gmail"
+                      class="backdrop-use"
+                    ></use>
+                  </svg>
+                  <input id="gmail" type="text" class="your-information" />
+                </li>
+                <li class="your-information-list">
+                  <label for="coments" class="your-information-label"
+                    >Коментарі</label
+                  >
+                  <br />
+                  <input id="coments" type="text" class="your-information" />
+                </li>
+              </ul>
+              <input type="checkbox" class="checkbox-agree" />
+              <h6 class="agree-with">
+                Погоджуюсь з розсилкою і приймаю<h7>Умови договору</h7>
+              </h6>
+              <br />
+              <button type="button" class="send-information">Надіслати</button>
             </div>
           </div>
         </div>
@@ -113,13 +184,28 @@
           <h2 class="what-we-do">Чим ми займаємося</h2>
           <ul class="what-we-do-menu">
             <li class="what-we-do-list">
-              <img src="./img/img(9).jpg" alt="" class="what-we-do-img" />
+              <div class="overley">
+                <div class="overley-background">
+                  <h6 class="what-we-do-position">ДЕСКТОПНІ ЗАСТОСУНКИ</h6>
+                </div>
+                <img src="./img/img(9).jpg" alt="" class="what-we-do-img" />
+              </div>
             </li>
             <li class="what-we-do-list">
-              <img src="./img/img(10).jpg" alt="" class="what-we-do-img" />
+              <div class="overley">
+                <div class="overley-background">
+                  <h6 class="what-we-do-position">МОБІЛЬНІ ЗАСТОСУНКИ</h6>
+                </div>
+                <img src="./img/img(10).jpg" alt="" class="what-we-do-img" />
+              </div>
             </li>
             <li class="what-we-do-list">
-              <img src="./img/img(11).jpg" alt="" class="what-we-do-img" />
+              <div class="overley">
+                <div class="overley-background">
+                  <h6 class="what-we-do-position">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h6>
+                </div>
+                <img src="./img/img(11).jpg" alt="" class="what-we-do-img" />
+              </div>
             </li>
           </ul>
         </div>
@@ -313,35 +399,35 @@
             <li class="client-list">
               <a class="client-background">
                 <svg width="44.27px" height="49.23px" class="client-item">
-                  <use href="./client/clients.svg#client-1"></use>
+                  <use href="./client/symbol-defs.svg#client-1"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="40px" height="52px" class="client-item">
-                  <use href="./client/clients.svg#client-2"></use>
+                  <use href="./client/symbol-defs.svg#client-2"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="41px" height="42.6px" class="client-item">
-                  <use href="./client/clients.svg#client-3"></use>
+                  <use href="./client/symbol-defs.svg#client-3"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="79.66px" height="42.02px" class="client-item">
-                  <use href="./client/clients.svg#client-4"></use>
+                  <use href="./client/symbol-defs.svg#client-4"></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="59px" height="47px" class="client-item">
-                  <use href="./client/clients.svg#client-5"></use>
+                  <use href="./client/symbol-defs.svg#client-5"></use>
                 </svg>
               </a>
             </li>
