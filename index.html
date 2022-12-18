@@ -39,7 +39,7 @@
         <ul class="header-contacts">
           <li class="header-contact">
             <svg width="16px" height="12px" class="contact-svg">
-              <use href="./subol-defs.img/symbol-defs.svg#gmail"></use>
+              <use href="./subol-defs.img/symbol-defs.svg#icon-gmail-1"></use>
             </svg>
             <a href="mailto:info@devstudio.com" class="header-contact-link"
               >info@devstudio.com</a
@@ -47,7 +47,7 @@
           </li>
           <li class="header-contact">
             <svg width="10px" height="16px" class="contact-svg">
-              <use href="./subol-defs.img/symbol-defs.svg#phone"></use>
+              <use href="./subol-defs.img/symbol-defs.svg#icon-phone"></use>
             </svg>
             <a href="tel:+380961111111" class="header-contact-link"
               >+38 096 111 11 11</a
@@ -64,7 +64,7 @@
           <div class="container">
             <div>
               <h1 class="hero-logo">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-              <button class="hero-button" type="button">
+              <button class="hero-button" type="button" data-open-modal>
                 Замовити послугу
               </button>
             </div>
@@ -72,13 +72,14 @@
         </div>
 
         <div class="container">
-          <div class="backdrop">
+          <div class="backdrop is-hidden" data-backdrop>
             <div class="background-modal">
               <button type="button" class="close">
                 <svg class="close-svg">
                   <use
-                    href="./subol-defs.img/symbol-defs.svg#close"
+                    href="./subol-defs.img/symbol-defs.svg#icon-close"
                     class="close-use"
+                    data-close-modal
                   ></use>
                 </svg>
               </button>
@@ -92,11 +93,11 @@
                   <br />
                   <svg class="backdrop-svg" width="12" height="12">
                     <use
-                      href="./subol-defs.img/symbol-defs.svg#person"
+                      href="./subol-defs.img/symbol-defs.svg#icon-person"
                       class="backdrop-use"
                     ></use>
                   </svg>
-                  <input id="name" type="text" class="your-information" />
+                  <input id="name" type="text" class="your-information-input" />
                 </li>
                 <li class="your-information-list">
                   <label for="phone" class="your-information-label"
@@ -105,11 +106,15 @@
                   <br />
                   <svg class="backdrop-svg" width="13" height="13">
                     <use
-                      href="./subol-defs.img/symbol-defs.svg#phone"
+                      href="./subol-defs.img/symbol-defs.svg#icon-phone"
                       class="backdrop-use"
                     ></use>
                   </svg>
-                  <input id="phone" type="text" class="your-information" />
+                  <input
+                    id="phone"
+                    type="text"
+                    class="your-information-input"
+                  />
                 </li>
                 <li class="your-information-list">
                   <label for="gmail" class="your-information-label"
@@ -118,24 +123,40 @@
                   <br />
                   <svg class="backdrop-svg" width="15" height="12">
                     <use
-                      href="./img-icons/symbol-defs.svg#gmail"
+                      href="./subol-defs.img/symbol-defs.svg#icon-gmail-1"
                       class="backdrop-use"
                     ></use>
                   </svg>
-                  <input id="gmail" type="text" class="your-information" />
+                  <input
+                    id="gmail"
+                    type="text"
+                    class="your-information-input"
+                  />
                 </li>
                 <li class="your-information-list">
                   <label for="coments" class="your-information-label"
-                    >Коментарі</label
-                  >
+                    >Коментарі
+                  </label>
                   <br />
-                  <input id="coments" type="text" class="your-information" />
+                  <input
+                    placeholder="Введите текст"
+                    id="coments"
+                    type="text"
+                    class="your-information-coments"
+                  />
                 </li>
               </ul>
-              <input type="checkbox" class="checkbox-agree" />
-              <h6 class="agree-with">
-                Погоджуюсь з розсилкою і приймаю<h7>Умови договору</h7>
-              </h6>
+              <ul class="checkbox-menu">
+                <li>
+                  <input type="checkbox" class="checkbox-agree" />
+                </li>
+                <li>
+                  <h6 class="agree-with">
+                    Погоджуюсь з розсилкою і приймаю
+                    <u class="document-condition">Умови договору</u>
+                  </h6>
+                </li>
+              </ul>
               <br />
               <button type="button" class="send-information">Надіслати</button>
             </div>
@@ -399,42 +420,54 @@
             <li class="client-list">
               <a class="client-background">
                 <svg width="44.27px" height="49.23px" class="client-item">
-                  <use href="./client/symbol-defs.svg#client-1"></use>
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-client-1"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="40px" height="52px" class="client-item">
-                  <use href="./client/symbol-defs.svg#client-2"></use>
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-client-2"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="41px" height="42.6px" class="client-item">
-                  <use href="./client/symbol-defs.svg#client-3"></use>
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-client-3"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="79.66px" height="42.02px" class="client-item">
-                  <use href="./client/symbol-defs.svg#client-4"></use>
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-client-4"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="59px" height="47px" class="client-item">
-                  <use href="./client/symbol-defs.svg#client-5"></use>
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-client-5"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="client-list">
               <a class="client-background">
                 <svg width="88.48px" height="45.44px" class="client-item">
-                  <use href="./client/clients.svg#client-6"></use>
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-client-6"
+                  ></use>
                 </svg>
               </a>
             </li>

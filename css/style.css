@@ -6,7 +6,6 @@
 html {
   margin: 0;
   padding: 0;
-  background-color: #2196f3;
 }
 
 body {
@@ -155,6 +154,16 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop-svg {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 14px;
+  fill: currentColor;
+}
 .close {
   width: 30px;
   height: 30px;
@@ -162,10 +171,18 @@ ul {
   margin-left: 490px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  border-radius: 50%;
+}
+.close .close-svg {
+  position: relative;
+}
+.close:hover {
+  color: #2196f3;
 }
 .close-svg {
   width: 11px;
   height: 11px;
+  fill: currentColor;
 }
 .take-your-information {
   padding-top: 40px;
@@ -184,8 +201,41 @@ ul {
   margin-right: 800px;
   margin-left: 40px;
 }
-.your-information {
-  padding-left: 200px;
+.your-information-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.your-information-coments {
+  height: 120px;
+  width: 448px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.your-information-input .backdrop-svg {
+  position: relative;
+}
+.your-information-input:hover {
+}
+.agree-with {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.checkbox-menu {
+  display: flex;
+}
+.checkbox-agree {
+  margin-left: 52px;
+  margin-right: 8.36px;
+  width: 16px;
+  height: 15px;
+  background: #212121;
+}
+.document-condition {
+  color: #2196f3;
 }
 .send-information {
   margin-top: 30px;
