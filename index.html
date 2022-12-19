@@ -18,7 +18,6 @@
       rel="stylesheet"
     />
   </head>
-  <div></div>
   <body>
     <!-- header -->
     <header class="header">
@@ -61,106 +60,91 @@
     <main>
       <!-- section-hero -->
       <section class="hero-section">
-        <div class="hero-box">
-          <div class="container">
-            <div>
-              <h1 class="hero-logo">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-              <button class="hero-button" type="button" data-open-modal>
-                Замовити послугу
-              </button>
-            </div>
+        <div class="container">
+          <div>
+            <h1 class="hero-logo">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            <button class="hero-button" type="button" data-open-modal>
+              Замовити послугу
+            </button>
           </div>
         </div>
-
-        <div class="container">
-          <div class="backdrop is-hidden" data-backdrop>
-            <div class="background-modal">
-              <button type="button" class="close">
-                <svg class="close-svg">
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="background-modal">
+            <button type="button" class="close">
+              <svg class="close-svg">
+                <use
+                  href="./subol-defs.img/symbol-defs.svg#icon-close"
+                  class="close-use"
+                  data-close-modal
+                ></use>
+              </svg>
+            </button>
+            <br />
+            <h6 class="take-your-information">
+              Залиште свої дані, ми Вам зателефонуємо
+            </h6>
+            <ul class="your-information-menu">
+              <li class="your-information-list">
+                <label for="name" class="your-information-label">Ім'я</label>
+                <br />
+                <input id="name" type="text" class="your-information-input" />
+                <svg class="backdrop-svg" width="12" height="12">
                   <use
-                    href="./subol-defs.img/symbol-defs.svg#icon-close"
-                    class="close-use"
-                    data-close-modal
+                    href="./subol-defs.img/symbol-defs.svg#icon-person"
+                    class="backdrop-use"
                   ></use>
                 </svg>
-              </button>
-              <br />
-              <h6 class="take-your-information">
-                Залиште свої дані, ми Вам зателефонуємо
-              </h6>
-              <ul class="your-information-menu">
-                <li class="your-information-list">
-                  <label for="name" class="your-information-label">Ім'я</label>
-                  <br />
-                  <svg class="backdrop-svg" width="12" height="12">
-                    <use
-                      href="./subol-defs.img/symbol-defs.svg#icon-person"
-                      class="backdrop-use"
-                    ></use>
-                  </svg>
-                  <input id="name" type="text" class="your-information-input" />
-                </li>
-                <li class="your-information-list">
-                  <label for="phone" class="your-information-label"
-                    >Телефон</label
-                  >
-                  <br />
-                  <svg class="backdrop-svg" width="13" height="13">
-                    <use
-                      href="./subol-defs.img/symbol-defs.svg#icon-phone"
-                      class="backdrop-use"
-                    ></use>
-                  </svg>
-                  <input
-                    id="phone"
-                    type="text"
-                    class="your-information-input"
-                  />
-                </li>
-                <li class="your-information-list">
-                  <label for="gmail" class="your-information-label"
-                    >Пошта</label
-                  >
-                  <br />
-                  <svg class="backdrop-svg" width="15" height="12">
-                    <use
-                      href="./subol-defs.img/symbol-defs.svg#icon-gmail-1"
-                      class="backdrop-use"
-                    ></use>
-                  </svg>
-                  <input
-                    id="gmail"
-                    type="text"
-                    class="your-information-input"
-                  />
-                </li>
-                <li class="your-information-list">
-                  <label for="coments" class="your-information-label"
-                    >Коментарі
-                  </label>
-                  <br />
-                  <input
-                    placeholder="Введите текст"
-                    id="coments"
-                    type="text"
-                    class="your-information-coments"
-                  />
-                </li>
-              </ul>
-              <ul class="checkbox-menu">
-                <li>
-                  <input type="checkbox" class="checkbox-agree" />
-                </li>
-                <li>
-                  <h6 class="agree-with">
-                    Погоджуюсь з розсилкою і приймаю
-                    <u class="document-condition">Умови договору</u>
-                  </h6>
-                </li>
-              </ul>
-              <br />
-              <button type="button" class="send-information">Надіслати</button>
-            </div>
+              </li>
+              <li class="your-information-list">
+                <label for="phone" class="your-information-label"
+                  >Телефон</label
+                >
+                <br />
+                <input id="phone" type="text" class="your-information-input" />
+                <svg class="backdrop-svg" width="13" height="13">
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-phone"
+                    class="backdrop-use"
+                  ></use>
+                </svg>
+              </li>
+              <li class="your-information-list">
+                <label for="gmail" class="your-information-label">Пошта</label>
+                <br />
+                <input id="gmail" type="text" class="your-information-input" />
+                <svg class="backdrop-svg" width="15" height="12">
+                  <use
+                    href="./subol-defs.img/symbol-defs.svg#icon-gmail-1"
+                    class="backdrop-use"
+                  ></use>
+                </svg>
+              </li>
+              <li class="your-information-list">
+                <label for="coments" class="your-information-label"
+                  >Коментарі
+                </label>
+                <br />
+                <input
+                  placeholder="Введите текст"
+                  id="coments"
+                  type="text"
+                  class="your-information-coments"
+                />
+              </li>
+            </ul>
+            <ul class="checkbox-menu">
+              <li>
+                <input type="checkbox" class="checkbox-agree" />
+              </li>
+              <li>
+                <h6 class="agree-with">
+                  Погоджуюсь з розсилкою і приймаю
+                  <u class="document-condition">Умови договору</u>
+                </h6>
+              </li>
+            </ul>
+            <br />
+            <button type="button" class="send-information">Надіслати</button>
           </div>
         </div>
       </section>
@@ -547,5 +531,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
