@@ -29,6 +29,8 @@ h4 {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: solid red;
 }
 
@@ -57,19 +59,10 @@ h4 {
   padding-bottom: 32px;
   padding-left: 93px;
 }
-.header-link {
-  margin-right: 54px;
-}
-.butten-link:nth-child(2) {
-  margin-right: 55px;
-}
-.header-link:last-child {
-  margin-right: 0;
-}
 .header-link:hover {
   color: #2196f3;
 }
-.header-contact-link:hover {
+.header-link-2:hover {
   color: #2196f3;
 }
 .header-list {
@@ -89,6 +82,15 @@ h4 {
 .header-contact:first-child {
   margin-right: 50px;
 }
+.header-contact-link:hover {
+  color: #2196f3;
+}
+.header-contact {
+  color: #757575;
+}
+.header-contact:hover {
+  color: #2196f3;
+}
 .header-contact-link {
   text-decoration: none;
   font-size: 14px;
@@ -96,12 +98,7 @@ h4 {
 }
 .contact-svg {
   margin-right: 10px;
-}
-.contact {
-  fill: #757575;
-}
-.contact:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 /* buttons section */
@@ -153,8 +150,9 @@ h4 {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
+  padding-bottom: 94px;
 }
 .service-list {
   /* position: relative; */
@@ -175,8 +173,12 @@ h4 {
   top: 0;
   left: 0;
   padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
   transform: translateX(100%);
   justify-content: center;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
   font-size: 18px;
   color: #fff;
   background: rgba(33, 150, 243, 0.9);
@@ -208,12 +210,14 @@ h4 {
   font-size: 18px;
   color: #212121;
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 .service-link2 {
   font-weight: 400;
   font-size: 16px;
   color: #757575;
   margin-bottom: 20px;
+  margin-left: 24px;
 }
 
 /* footer */
@@ -253,7 +257,7 @@ h4 {
 .footer-contacts-list {
   font-family: 'Roboto', serif;
   font-weight: 400;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .footer-contacts-link {
   text-decoration: none;
@@ -307,4 +311,43 @@ h4 {
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+}
+.footer-sign-up {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-sign-up-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  width: 358px;
+  height: 50px;
+}
+.footer-sign-up-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+}
+.footer-sign-up-menu {
+  display: flex;
+}
+.sign-up {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  margin-left: 28px;
+}
+.footer-sign-up-svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin-left: 10px;
+  margin-left: 13px;
 }

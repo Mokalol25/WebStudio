@@ -69,13 +69,12 @@
           </div>
         </div>
         <div class="backdrop is-hidden" data-backdrop>
-          <div class="background-modal">
-            <button type="button" class="close">
+          <form class="background-modal">
+            <button type="button" class="close" data-close-modal>
               <svg class="close-svg">
                 <use
                   href="./subol-defs.img/symbol-defs.svg#icon-close"
                   class="close-use"
-                  data-close-modal
                 ></use>
               </svg>
             </button>
@@ -144,8 +143,8 @@
               </li>
             </ul>
             <br />
-            <button type="button" class="send-information">Надіслати</button>
-          </div>
+            <button type="submit" class="send-information">Надіслати</button>
+          </form>
         </div>
       </section>
       <!-- your benefits -->
@@ -527,6 +526,28 @@
                 </div>
               </li>
             </ul>
+          </li>
+          <li>
+            <h5 class="footer-sign-up">Підпишіться на розсилку</h5>
+            <input
+              type="text"
+              placeholder="E-mail"
+              class="footer-sign-up-input"
+            />
+            <button type="button" class="footer-sign-up-button">
+              <ul class="footer-sign-up-menu">
+                <li class="footer-sign-up-item">
+                  <p class="sign-up">Підписатись</p>
+                </li>
+                <li class="footer-sign-up-item">
+                  <svg class="footer-sign-up-svg">
+                    <use
+                      href="./subol-defs.img/symbol-defs.svg#icon-send"
+                    ></use>
+                  </svg>
+                </li>
+              </ul>
+            </button>
           </li>
         </ul>
       </div>
