@@ -88,6 +88,7 @@ ul {
   color: #757575;
 }
 .contact-svg {
+  justify-content: center;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -189,13 +190,14 @@ ul {
   fill: currentColor;
 }
 .take-your-information {
-  padding-top: 40px;
+  padding-top: 2px;
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 20px;
   align-items: center;
   margin-bottom: 12px;
-  padding-left: 42px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .your-information-label {
   font-family: 'Roboto', serif;
@@ -235,6 +237,7 @@ ul {
   font-family: 'Roboto', serif;
   font-weight: 400;
   font-size: 14px;
+  color: #757575;
 }
 .checkbox-menu {
   display: flex;
