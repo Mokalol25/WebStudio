@@ -52,9 +52,11 @@ ul {
 }
 .header-link:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .header-link-2:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .header-list {
   margin-right: 54px;
@@ -75,12 +77,14 @@ ul {
 }
 .header-contact-link:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .header-contact {
   color: #757575;
 }
 .header-contact:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .header-contact-link {
   text-decoration: none;
@@ -158,6 +162,8 @@ ul {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 1000ms;
 }
 .is-hidden {
   opacity: 0;
@@ -178,11 +184,16 @@ ul {
   background-color: #fff;
   border-radius: 50%;
 }
+.close:hover .close-svg {
+  transform: rotate(180deg);
+  transition: transform 1s;
+}
 .close .close-svg {
   position: relative;
 }
 .close:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .close-svg {
   width: 11px;
@@ -219,9 +230,11 @@ ul {
 }
 .your-information-input:hover {
   border-color: #2196f3;
+  transition: 500ms;
 }
 .your-information-input:hover + .backdrop-svg {
   fill: #2196f3;
+  transition: 500ms;
 }
 .your-information-coments {
   height: 120px;
@@ -232,6 +245,7 @@ ul {
 }
 .your-information-coments:hover {
   border-color: #2196f3;
+  transition: 500ms;
 }
 .agree-with {
   font-family: 'Roboto', serif;
@@ -347,6 +361,7 @@ ul {
 .what-we-do-list:first-child {
   margin-left: 0;
 }
+
 .overley {
   position: relative;
 }
@@ -365,6 +380,7 @@ ul {
 }
 .overley-background:hover {
   opacity: 1;
+  transition: 500ms;
 }
 .what-we-do-position {
   position: absolute;
@@ -435,6 +451,7 @@ ul {
 }
 .social-list:hover {
   color: #fff;
+  transition: 500ms;
 }
 .social-background {
   background-color: #fff;
@@ -456,6 +473,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  transition: 500ms;
 }
 /* all time clients */
 .all-time-clients .container {
@@ -499,6 +517,7 @@ ul {
   border-radius: 4px;
   box-shadow: 1px 2px 1px rgba(33, 150, 243, 1),
     0px 1px 1px rgba(33, 150, 243, 1), 0px 1px 3px rgba(33, 150, 243, 1);
+  transition: 500ms;
 }
 .client-list {
   margin-right: 30px;
@@ -598,12 +617,14 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  transition: 500ms;
 }
 .footer-sign-up {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
+  margin-bottom: 20px;
 }
 .footer-sign-up-input {
   border: 1px solid rgba(255, 255, 255, 0.3);

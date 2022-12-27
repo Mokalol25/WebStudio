@@ -61,9 +61,11 @@ h4 {
 }
 .header-link:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .header-link-2:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .header-list {
   margin-right: 54px;
@@ -84,6 +86,7 @@ h4 {
 }
 .header-contact-link:hover {
   color: #2196f3;
+  transition: 500ms;
 }
 .header-contact {
   color: #757575;
@@ -127,9 +130,11 @@ h4 {
 }
 .button-link:hover {
   background-color: #2196f3;
+  transition: 500ms;
 }
 .button-logo:hover {
   color: #fff;
+  transition: 500ms;
 }
 .button-logo {
   font-weight: 500;
@@ -185,11 +190,13 @@ h4 {
 }
 .service-list:hover .overlay {
   transform: translateX(0);
+  transition: 1000ms;
 }
 .service-list:hover {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 500ms;
 }
 /* .overlay::before {
   content: '';
@@ -311,12 +318,14 @@ h4 {
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  transition: 500ms;
 }
 .footer-sign-up {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
+  margin-bottom: 20px;
 }
 .footer-sign-up-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
