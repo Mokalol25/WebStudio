@@ -31,7 +31,6 @@ h4 {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid red;
 }
 
 /* section header */
@@ -61,11 +60,30 @@ h4 {
 }
 .header-link:hover {
   color: #2196f3;
-  transition: 500ms;
+}
+.header-list:hover .header-link-box::after {
+  opacity: 1;
+  margin-top: 28px;
+}
+.header-link-box {
+  position: relative;
+}
+.header-link-box::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #2196f3;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: margin-top 1s;
 }
 .header-link-2:hover {
   color: #2196f3;
-  transition: 500ms;
+}
+.header-link-2 {
+  transition: color 500ms;
 }
 .header-list {
   margin-right: 54px;
@@ -74,6 +92,7 @@ h4 {
   font-size: 14px;
   text-decoration: none;
   color: black;
+  transition: color 500ms;
 }
 .header-contacts {
   font-weight: 500;
@@ -86,10 +105,10 @@ h4 {
 }
 .header-contact-link:hover {
   color: #2196f3;
-  transition: 500ms;
 }
 .header-contact {
   color: #757575;
+  transition: color 500ms;
 }
 .header-contact:hover {
   color: #2196f3;
@@ -98,12 +117,17 @@ h4 {
   text-decoration: none;
   font-size: 14px;
   color: #757575;
+  transition: color 500ms;
 }
 .contact-svg {
+  justify-content: center;
   margin-right: 10px;
   fill: currentColor;
 }
 
+.gray-cross {
+  border: 1px solid #ececec;
+}
 /* buttons section */
 .buttons-section .container {
   padding-top: 94px;
@@ -127,14 +151,16 @@ h4 {
   border: none;
   height: 38px;
   border-radius: 4px;
+  transition: background-color 500ms;
 }
 .button-link:hover {
   background-color: #2196f3;
-  transition: 500ms;
 }
-.button-logo:hover {
+.button-link .button-logo {
+  transition: color 500ms;
+}
+.button-link:hover .button-logo {
   color: #fff;
-  transition: 500ms;
 }
 .button-logo {
   font-weight: 500;
@@ -162,6 +188,7 @@ h4 {
 .service-list {
   /* position: relative; */
   background: #ffffff;
+  border-radius: 1px;
   border: 1px solid #eeeeee;
 }
 .servise-img {
@@ -188,15 +215,20 @@ h4 {
   color: #fff;
   background: rgba(33, 150, 243, 0.9);
 }
+.service-list .overlay {
+  transition: transform 1000ms;
+}
 .service-list:hover .overlay {
   transform: translateX(0);
-  transition: 1000ms;
+}
+.service-list {
+  transition: box-shadow 500ms;
 }
 .service-list:hover {
+  border-radius: 1px;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 500ms;
 }
 /* .overlay::before {
   content: '';
@@ -217,6 +249,7 @@ h4 {
   font-size: 18px;
   color: #212121;
   margin-bottom: 4px;
+  margin-top: 20px;
   margin-left: 24px;
 }
 .service-link2 {
@@ -257,9 +290,6 @@ h4 {
 }
 .footer-contacts-list {
   margin-bottom: 9px;
-}
-.footer-contacts-list:last-child {
-  margin-bottom: 60px;
 }
 .footer-contacts-list {
   font-family: 'Roboto', serif;
@@ -309,16 +339,10 @@ h4 {
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  transition: background-color 500ms;
 }
 .join-to-us-background:hover {
   background-color: #2196f3;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 60px;
-  transition: 500ms;
 }
 .footer-sign-up {
   font-family: 'Roboto', serif;
@@ -334,6 +358,10 @@ h4 {
   background: none;
   width: 358px;
   height: 50px;
+  transition: border-color 500ms;
+}
+.footer-sign-up-input:hover {
+  border-color: #2196f3;
 }
 .footer-sign-up-button {
   width: 200px;
@@ -341,7 +369,7 @@ h4 {
   background: #2196f3;
   border: none;
   border-radius: 4px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .footer-sign-up-menu {
   display: flex;

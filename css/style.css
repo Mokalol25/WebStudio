@@ -22,7 +22,7 @@ ul {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid red;
+  /* outline: solid red; */
 }
 
 /* section header */
@@ -52,11 +52,30 @@ ul {
 }
 .header-link:hover {
   color: #2196f3;
-  transition: 500ms;
+}
+.header-list:hover .header-link-box::after {
+  opacity: 1;
+  margin-top: 28px;
+}
+.header-link-box {
+  position: relative;
+}
+.header-link-box::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #2196f3;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: margin-top 1s;
 }
 .header-link-2:hover {
   color: #2196f3;
-  transition: 500ms;
+}
+.header-link-2 {
+  transition: color 500ms;
 }
 .header-list {
   margin-right: 54px;
@@ -65,6 +84,7 @@ ul {
   font-size: 14px;
   text-decoration: none;
   color: black;
+  transition: color 500ms;
 }
 .header-contacts {
   font-weight: 500;
@@ -77,19 +97,19 @@ ul {
 }
 .header-contact-link:hover {
   color: #2196f3;
-  transition: 500ms;
 }
 .header-contact {
   color: #757575;
+  transition: color 500ms;
 }
 .header-contact:hover {
   color: #2196f3;
-  transition: 500ms;
 }
 .header-contact-link {
   text-decoration: none;
   font-size: 14px;
   color: #757575;
+  transition: color 500ms;
 }
 .contact-svg {
   justify-content: center;
@@ -140,6 +160,11 @@ ul {
   border: none;
   border-radius: 4px;
   color: #fff;
+  transform: scale(1, 1);
+  transition: transform 500ms;
+}
+.hero-button:hover {
+  transform: scale(1.5, 1.5);
 }
 
 .background-modal {
@@ -171,7 +196,7 @@ ul {
 }
 .backdrop-svg {
   position: absolute;
-  margin-top: 14px;
+  margin-top: 18px;
   left: 55px;
   fill: currentColor;
 }
@@ -183,17 +208,17 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 50%;
+  transition: color 500ms;
 }
 .close:hover .close-svg {
   transform: rotate(180deg);
-  transition: transform 1s;
 }
 .close .close-svg {
   position: relative;
+  transition: transform 1s;
 }
 .close:hover {
   color: #2196f3;
-  transition: 500ms;
 }
 .close-svg {
   width: 11px;
@@ -224,17 +249,21 @@ ul {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  transition: border-color 500ms;
 }
 .your-information-input .backdrop-svg {
   position: relative;
 }
+.your-information-input + .backdrop-svg {
+  transition: fill 500ms;
+}
 .your-information-input:hover {
   border-color: #2196f3;
-  transition: 500ms;
 }
 .your-information-input:hover + .backdrop-svg {
   fill: #2196f3;
-  transition: 500ms;
 }
 .your-information-coments {
   height: 120px;
@@ -242,10 +271,11 @@ ul {
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  margin-top: 4px;
+  transition: border-color 500ms;
 }
 .your-information-coments:hover {
   border-color: #2196f3;
-  transition: 500ms;
 }
 .agree-with {
   font-family: 'Roboto', serif;
@@ -340,7 +370,6 @@ ul {
 .what-we-do-section {
 }
 .what-we-do-section .container {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .what-we-do {
@@ -377,10 +406,10 @@ ul {
   height: 70px;
   bottom: 1%;
   opacity: 0;
+  transition: opacity 500ms;
 }
-.overley-background:hover {
+.overley:hover .overley-background {
   opacity: 1;
-  transition: 500ms;
 }
 .what-we-do-position {
   position: absolute;
@@ -419,6 +448,7 @@ ul {
   background-color: #fff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-worker:last-child {
   margin-right: 0;
@@ -448,10 +478,10 @@ ul {
   width: 44px;
   height: 44px;
   color: #afb1b8;
+  transition: color 500ms;
 }
 .social-list:hover {
   color: #fff;
-  transition: 500ms;
 }
 .social-background {
   background-color: #fff;
@@ -461,19 +491,13 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  transition: background-color 500ms;
 }
 .social-link-svg {
   fill: currentColor;
 }
 .social-background:hover {
   background-color: #2196f3;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 60px;
-  transition: 500ms;
 }
 /* all time clients */
 .all-time-clients .container {
@@ -500,6 +524,7 @@ ul {
 }
 .client-list {
   color: #afb1b8;
+  transition: color 500ms;
 }
 .client-background {
   width: 170px;
@@ -510,6 +535,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow 1000ms;
 }
 .client-background:hover {
   width: 170px;
@@ -517,7 +543,6 @@ ul {
   border-radius: 4px;
   box-shadow: 1px 2px 1px rgba(33, 150, 243, 1),
     0px 1px 1px rgba(33, 150, 243, 1), 0px 1px 3px rgba(33, 150, 243, 1);
-  transition: 500ms;
 }
 .client-list {
   margin-right: 30px;
@@ -556,9 +581,6 @@ ul {
 }
 .footer-contacts-list {
   margin-bottom: 9px;
-}
-.footer-contacts-list:last-child {
-  margin-bottom: 60px;
 }
 .footer-contacts-list {
   font-family: 'Roboto', serif;
@@ -608,16 +630,10 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  transition: background-color 500ms;
 }
 .join-to-us-background:hover {
   background-color: #2196f3;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 60px;
-  transition: 500ms;
 }
 .footer-sign-up {
   font-family: 'Roboto', serif;
@@ -633,6 +649,10 @@ ul {
   background: none;
   width: 358px;
   height: 50px;
+  transition: border-color 500ms;
+}
+.footer-sign-up-input:hover {
+  border-color: #2196f3;
 }
 .footer-sign-up-button {
   width: 200px;
