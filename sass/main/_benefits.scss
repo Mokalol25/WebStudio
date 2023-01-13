@@ -1,0 +1,54 @@
+.benefits-section {
+}
+.benefits-section .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits {
+  display: flex;
+  margin-bottom: 10px;
+}
+.benefits__item {
+  margin-left: 30px;
+}
+.benefits__item:first-child {
+  margin-left: 0;
+}
+.benefits__item::before {
+  display: block;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.benefits__item:nth-child(1)::before {
+  background-image: url(../img-icons/antenna.png);
+  background-repeat: no-repeat;
+}
+.benefits__item:nth-child(2)::before {
+  background-image: url(../img-icons/clock.png);
+  background-repeat: no-repeat;
+}
+.benefits__item:nth-child(3)::before {
+  background-image: url(../img-icons/diagram.png);
+  background-repeat: no-repeat;
+}
+.benefits__item:nth-child(4)::before {
+  background-image: url(../img-icons/astronaut.png);
+  background-repeat: no-repeat;
+}
+
+.benefits__benefit {
+  /* font-family: 'Roboto', serif; */
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.benefits__text {
+  /* font-family: 'Roboto', serif; */
+  font-weight: 400;
+  color: #757575;
+}

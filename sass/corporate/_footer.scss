@@ -1,0 +1,127 @@
+.footer {
+  background-color: #2f303a;
+}
+.footer .container {
+  padding-top: 94px;
+  padding-bottom: 60px;
+}
+.webstudio2 {
+  font-family: 'Raleway', serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+}
+.web2 {
+  color: #2196f3;
+}
+.studio2 {
+  color: white;
+}
+.footer__address {
+  margin-top: 20px;
+  font-style: normal;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 9px;
+}
+.footer-contacts__item {
+  margin-bottom: 9px;
+}
+.footer-contacts__item {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  margin-left: 0px;
+}
+.footer-contacts__link {
+  text-decoration: none;
+  color: #757575;
+}
+.footer__list {
+  display: flex;
+}
+.footer__item {
+  margin-right: 70px;
+}
+.footer__item:last-child {
+  margin-right: 0;
+}
+.join-to-us {
+  display: flex;
+  margin-top: 20px;
+}
+.join-to-us-headline {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.join-to-us__item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  justify-content: center;
+}
+.join-to-us-headline:last-child {
+  margin-right: 0;
+}
+.join-to-us__defs {
+  fill: #fff;
+}
+.join-to-us__background {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  transition: background-color 500ms;
+}
+.join-to-us__background:hover {
+  background-color: #2196f3;
+}
+.sign-up-headline {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.sign-up-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  width: 358px;
+  height: 50px;
+  transition: border-color 500ms;
+}
+.sign-up-input:hover {
+  border-color: #2196f3;
+}
+.sign-up-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+}
+.sign-up-button__list {
+  display: flex;
+}
+.sign-up-button__sign-up {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  margin-left: 28px;
+}
+.sign-up-button__svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin-left: 10px;
+  margin-left: 13px;
+}

@@ -1,0 +1,41 @@
+.portfolio-buttons .container {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.portfolio-buttons {
+}
+.portfolio-buttons__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.portfolio-buttons__item {
+  margin-left: 8px;
+}
+.portfolio-buttons__item:first-child {
+  margin-left: 0;
+}
+.portfolio-buttons__link {
+  background-color: #f5f4fa;
+  border: none;
+  height: 38px;
+  border-radius: 4px;
+  transition: background-color 500ms;
+}
+.portfolio-buttons__link:hover {
+  background-color: #2196f3;
+}
+.portfolio-buttons__link .portfolio-buttons__logo {
+  transition: color 500ms;
+}
+.portfolio-buttons__link:hover .portfolio-buttons__logo {
+  color: #fff;
+}
+.portfolio-buttons__logo {
+  font-weight: 500;
+  color: #212121;
+  fill: currentColor;
+  margin-left: 22px;
+  margin-right: 23px;
+  font-size: 16px;
+}

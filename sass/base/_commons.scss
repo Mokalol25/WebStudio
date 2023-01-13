@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', serif;
+}
+
+ul {
+  list-style: none;
+}
+p {
+  font-family: 'Roboto', serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', serif;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
