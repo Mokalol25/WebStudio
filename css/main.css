@@ -179,6 +179,12 @@ h4 {
   fill: currentColor;
 }
 
+.gray-cross {
+  background-color: #757575;
+  width: 100%;
+  border: 1px solid #eeeeee;
+}
+
 .hero-section {
   text-align: center;
   width: 100%;
