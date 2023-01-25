@@ -32,15 +32,15 @@
   height: 50px;
   font-size: 16px;
   font-weight: 700;
-  background-color: #2196f3;
+  background-color: $background-color;
   border: none;
   border-radius: 4px;
   color: #fff;
   transform: scale(1, 1);
   transition: transform 500ms;
-}
-.hero-section__button:hover {
-  transform: scale(1.5, 1.5);
+  &:hover {
+    transform: scale(1.5, 1.5);
+  }
 }
 
 .background-modal {
@@ -88,7 +88,7 @@
   transition: transform 1s;
 }
 .backdrop__close:hover {
-  color: #2196f3;
+  color: $svg-hover-color;
 }
 .backdrop__close-svg {
   width: 11px;
@@ -128,6 +128,9 @@
   margin-top: 4px;
   margin-bottom: 10px;
   transition: border-color 500ms;
+  &:hover {
+    border-color: $border-hover-color;
+  }
 }
 .your-information__input .your-information__svg {
   position: relative;
@@ -135,11 +138,8 @@
 .your-information__input + .your-information__svg {
   transition: fill 500ms;
 }
-.your-information__input:hover {
-  border-color: #2196f3;
-}
 .your-information__input:hover + .your-information__svg {
-  fill: #2196f3;
+  fill: $svg-color;
 }
 .your-information__coments {
   height: 120px;
@@ -149,9 +149,9 @@
   border-radius: 4px;
   margin-top: 4px;
   transition: border-color 500ms;
-}
-.your-information__coments:hover {
-  border-color: #2196f3;
+  &:hover {
+    border-color: $border-hover-color;
+  }
 }
 .checkbox__agree-with {
   font-family: 'Roboto', serif;
@@ -160,7 +160,7 @@
   color: #757575;
 }
 .checkbox {
-  display: flex;
+  @extend %flex;
 }
 .checkbox__agree {
   margin-left: 52px;
@@ -170,7 +170,7 @@
   background: #212121;
 }
 .checkbox__document-condition {
-  color: #2196f3;
+  color: $text-color;
 }
 .backdrop__send-information {
   margin-top: 30px;
@@ -182,7 +182,7 @@
   font-size: 16px;
   font-family: 'Roboto', serif;
   font-weight: 700;
-  background: #2196f3;
+  background: $background-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }

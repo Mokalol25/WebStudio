@@ -12,23 +12,22 @@
   margin-bottom: 50px;
 }
 .what-we-do__list {
-  display: flex;
-  justify-content: center;
+  @extend %flex;
 }
 .what-we-do__item {
   margin-left: 30px;
-}
-.what-we-do__item:first-child {
-  margin-left: 0;
+  &:last-child {
+    margin-left: 0;
+  }
 }
 
 .overley {
   position: relative;
-}
-.overley::before {
-  content: '';
-  display: block;
-  position: absolute;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+  }
 }
 .overley__background {
   position: absolute;

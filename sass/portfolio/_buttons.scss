@@ -6,14 +6,13 @@
 }
 .portfolio-buttons__list {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  @extend %flex;
 }
 .portfolio-buttons__item {
   margin-left: 8px;
-}
-.portfolio-buttons__item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 .portfolio-buttons__link {
   background-color: #f5f4fa;
@@ -21,9 +20,9 @@
   height: 38px;
   border-radius: 4px;
   transition: background-color 500ms;
-}
-.portfolio-buttons__link:hover {
-  background-color: #2196f3;
+  &:hover {
+    background-color: $background-hover-color;
+  }
 }
 .portfolio-buttons__link .portfolio-buttons__logo {
   transition: color 500ms;
