@@ -1,31 +1,43 @@
 .hero-section {
-  text-align: center;
-  width: 100%;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    width: 100%;
 
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
 
-  border-radius: 4px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/background-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .hero-section .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero-section__logo {
-  font-size: 44px;
   font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
-  margin-right: auto;
-  margin-bottom: 40px;
-  color: #fff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.36;
+    font-size: 44px;
+  }
 }
 .hero-section__button {
   width: 200px;
@@ -54,6 +66,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .backdrop {
   position: fixed;
@@ -65,6 +81,10 @@
   height: 100%;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: 1000ms;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .is-hidden {
   opacity: 0;
@@ -79,6 +99,10 @@
   background-color: #fff;
   border-radius: 50%;
   transition: color 500ms;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .backdrop__close:hover .backdrop__close-svg {
   transform: rotate(180deg);

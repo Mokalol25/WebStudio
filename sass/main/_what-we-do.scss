@@ -1,6 +1,9 @@
-.what-we-do-section {
+.what-we-do {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
-.what-we-do-section .container {
+.what-we-do .container {
   padding-bottom: 94px;
 }
 .what-we-do__headline {
@@ -15,9 +18,9 @@
   @extend %flex;
 }
 .what-we-do__item {
-  margin-left: 30px;
+  margin-right: 30px;
   &:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 

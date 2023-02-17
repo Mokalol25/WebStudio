@@ -6,49 +6,77 @@
 }
 .benefits {
   @extend %flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
+  gap: 30px;
 }
 .benefits__item {
-  margin-left: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
   &:first-child {
     margin-right: 0;
   }
   &:before {
-    display: block;
-    content: '';
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    background-position: center;
-    margin-bottom: 20px;
-  }
-  &:nth-child1(1)::before {
-    background-image: url(../img-icons/antenna.png);
-    background-repeat: no-repeat;
-  }
-  &:nth-child(2)::before {
-    background-image: url(../img-icons/clock.png);
-    background-repeat: no-repeat;
-  }
-  &:nth-child(3)::before {
-    background-image: url(../img-icons/diagram.png);
-    background-repeat: no-repeat;
-  }
-  &:nth-child(4)::before {
-    background-image: url(../img-icons/astronaut.png);
-    background-repeat: no-repeat;
+    @media screen and (min-width: 480px) {
+      display: block;
+      content: '';
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      width: 450px;
+      height: 120px;
+      background-position: center;
+      margin-bottom: 20px;
+      &:nth-child(1)::before {
+        background-image: url(../img-icons/antenna.png);
+        background-repeat: no-repeat;
+      }
+      &:nth-child(2)::before {
+        background-image: url(../img-icons/clock.png);
+        background-repeat: no-repeat;
+      }
+      &:nth-child(3)::before {
+        background-image: url(../img-icons/diagram.png);
+        background-repeat: no-repeat;
+      }
+      &:nth-child(4)::before {
+        background-image: url(../img-icons/astronaut.png);
+        background-repeat: no-repeat;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
 
 .benefits__benefit {
-  /* font-family: 'Roboto', serif; */
-  font-weight: 700;
-  color: #212121;
-  margin-bottom: 10px;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    font-weight: 700;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .benefits__text {
-  /* font-family: 'Roboto', serif; */
-  font-weight: 400;
-  color: #757575;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    font-weight: 400;
+    color: #757575;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }

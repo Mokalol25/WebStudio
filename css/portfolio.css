@@ -1,3 +1,15 @@
+.header .container, .header__list, .contacts, .portfolio-buttons__list, .services__list, .footer__list, .join-to-us__background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,20 +57,23 @@ h4 {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .webstudio {
@@ -79,9 +94,6 @@ h4 {
 
 .header__list {
   font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 93px;
@@ -113,13 +125,13 @@ h4 {
   transition: margin-top 1s;
 }
 
-.header__link-2:hover {
-  color: #2196f3;
-}
-
 .header__link-2 {
   -webkit-transition: color 500ms;
   transition: color 500ms;
+}
+
+.header__link-2:hover {
+  color: #2196f3;
 }
 
 .header__item {
@@ -127,36 +139,26 @@ h4 {
 }
 
 .header__link {
-  font-size: 14px;
   text-decoration: none;
-  color: black;
+  font-size: 14px;
   -webkit-transition: color 500ms;
   transition: color 500ms;
 }
 
 .contacts {
   font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.contacts__contact {
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
 }
 
 .contacts__contact:first-child {
   margin-right: 50px;
-}
-
-.contacts__link:hover {
-  color: #2196f3;
-}
-
-.contacts__contact {
-  color: #757575;
-  -webkit-transition: color 500ms;
-  transition: color 500ms;
 }
 
 .contacts__contact:hover {
@@ -166,9 +168,12 @@ h4 {
 .contacts__link {
   text-decoration: none;
   font-size: 14px;
-  color: #757575;
   -webkit-transition: color 500ms;
   transition: color 500ms;
+}
+
+.contacts__link:hover {
+  color: #2196f3;
 }
 
 .contacts__svg {
@@ -180,7 +185,7 @@ h4 {
 }
 
 .gray-cross {
-  background-color: #757575;
+  background-color: #2196f3;
   width: 100%;
   border: 1px solid #eeeeee;
 }
@@ -192,12 +197,6 @@ h4 {
 
 .portfolio-buttons__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .portfolio-buttons__item {
@@ -245,15 +244,9 @@ h4 {
 
 .services__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 94px;
 }
 
@@ -395,12 +388,6 @@ h4 {
   color: #757575;
 }
 
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer__item {
   margin-right: 70px;
 }
@@ -423,6 +410,10 @@ h4 {
   color: #fff;
 }
 
+.join-to-us-headline:last-child {
+  margin-right: 0;
+}
+
 .join-to-us__item {
   width: 44px;
   height: 44px;
@@ -430,10 +421,6 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.join-to-us-headline:last-child {
-  margin-right: 0;
 }
 
 .join-to-us__defs {
@@ -444,15 +431,6 @@ h4 {
   background: rgba(255, 255, 255, 0.1);
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 60px;
   -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
