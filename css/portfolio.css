@@ -139,6 +139,7 @@ h4 {
 }
 
 .header__link {
+  color: black;
   text-decoration: none;
   font-size: 14px;
   -webkit-transition: color 500ms;
@@ -151,6 +152,7 @@ h4 {
 }
 
 .contacts__contact {
+  color: #757575;
   text-decoration: none;
   font-size: 14px;
   -webkit-transition: color 500ms;
@@ -166,6 +168,7 @@ h4 {
 }
 
 .contacts__link {
+  color: #757575;
   text-decoration: none;
   font-size: 14px;
   -webkit-transition: color 500ms;
@@ -197,14 +200,20 @@ h4 {
 
 .portfolio-buttons__list {
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
-.portfolio-buttons__item {
-  margin-left: 8px;
-}
-
-.portfolio-buttons__item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .portfolio-buttons__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio-buttons__link {
@@ -240,14 +249,17 @@ h4 {
 
 .services .container {
   padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .services__list {
   list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 94px;
+  gap: 25px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .services__item {
@@ -309,18 +321,21 @@ h4 {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* .overlay::before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: ;
-  z-index: 5;
-  width: 100%;
-  height: 294px;
-} */
 .services__img {
-  width: 370px;
+  width: 450px;
   height: 294px;
+}
+
+@media screen and (min-width: 768px) {
+  .services__img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services__img {
+    width: 370px;
+  }
 }
 
 .services__link {
@@ -388,12 +403,37 @@ h4 {
   color: #757575;
 }
 
-.footer__item {
-  margin-right: 70px;
+.footer__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 120px;
 }
 
-.footer__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .footer__list {
+    gap: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    gap: 70px;
+  }
+}
+
+.footer__item {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item:nth-child(2) {
+  margin-top: -30px;
+}
+
+.footer__item:nth-child(3) {
+  margin-top: -30px;
 }
 
 .join-to-us {
@@ -407,11 +447,8 @@ h4 {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
+  text-transform: uppercase;
   color: #fff;
-}
-
-.join-to-us-headline:last-child {
-  margin-right: 0;
 }
 
 .join-to-us__item {
@@ -440,28 +477,54 @@ h4 {
   background-color: #2196f3;
 }
 
-.sign-up-headline {
+.sign-up {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-.sign-up-input {
+@media screen and (min-width: 1200px) {
+  .sign-up__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.sign-up__item:first-child {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up__item:first-child {
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
+.sign-up__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  width: 358px;
+  width: 450px;
   height: 50px;
   -webkit-transition: border-color 500ms;
   transition: border-color 500ms;
 }
 
-.sign-up-input:hover {
+.sign-up__input:hover {
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up__input {
+    width: 358px;
+  }
 }
 
 .sign-up-button {
@@ -479,7 +542,7 @@ h4 {
   display: flex;
 }
 
-.sign-up-button__sign-up {
+.sign-up-button__conect {
   color: #fff;
   font-size: 16px;
   font-family: 'Roboto', serif;

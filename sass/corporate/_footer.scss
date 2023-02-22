@@ -39,11 +39,23 @@
 }
 .footer__list {
   @extend %flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  @media screen and (min-width: 768px) {
+    gap: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+  }
 }
 .footer__item {
-  margin-right: 70px;
-  &:last-child {
-    margin-right: 0;
+  text-align: center;
+  align-items: center;
+  &:nth-child(2) {
+    margin-top: -30px;
+  }
+  &:nth-child(3) {
+    margin-top: -30px;
   }
 }
 .join-to-us {
@@ -54,10 +66,8 @@
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
+  text-transform: uppercase;
   color: #fff;
-  &:last-child {
-    margin-right: 0;
-  }
 }
 .join-to-us__item {
   width: 44px;
@@ -79,23 +89,43 @@
     background-color: $background-hover-color;
   }
 }
-.sign-up-headline {
+.sign-up {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
-.sign-up-input {
+.sign-up__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.sign-up__item {
+  &:first-child {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:first-child {
+      margin-bottom: 0px;
+      margin-right: 12px;
+    }
+  }
+}
+.sign-up__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  width: 358px;
+  width: 450px;
   height: 50px;
   transition: border-color 500ms;
   &:hover {
     border-color: $border-hover-color;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 .sign-up-button {
@@ -109,7 +139,7 @@
 .sign-up-button__list {
   display: flex;
 }
-.sign-up-button__sign-up {
+.sign-up-button__conect {
   color: #fff;
   font-size: 16px;
   font-family: 'Roboto', serif;

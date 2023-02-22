@@ -2,13 +2,14 @@
 }
 .services .container {
   padding-top: 50px;
+  padding-bottom: 94px;
 }
 .services__list {
   list-style: none;
   @extend %flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 94px;
+  gap: 25px;
+  justify-content: left;
 }
 .services__item {
   background: #ffffff;
@@ -52,19 +53,16 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-/* .overlay::before {
-  content: '';
-  display: block;
-  position: absolute;
-  opacity: ;
-  z-index: 5;
-  width: 100%;
-  height: 294px;
-} */
 
 .services__img {
-  width: 370px;
+  width: 450px;
   height: 294px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 .services__link {
   font-weight: 700;

@@ -139,6 +139,7 @@ h4 {
 }
 
 .header__link {
+  color: black;
   text-decoration: none;
   font-size: 14px;
   -webkit-transition: color 500ms;
@@ -151,6 +152,7 @@ h4 {
 }
 
 .contacts__contact {
+  color: #757575;
   text-decoration: none;
   font-size: 14px;
   -webkit-transition: color 500ms;
@@ -166,6 +168,7 @@ h4 {
 }
 
 .contacts__link {
+  color: #757575;
   text-decoration: none;
   font-size: 14px;
   -webkit-transition: color 500ms;
@@ -469,7 +472,7 @@ h4 {
 }
 
 @media screen and (min-width: 480px) {
-  .benefits__item:before {
+  .benefits__item::before {
     display: block;
     content: '';
     background-color: #f5f4fa;
@@ -479,34 +482,38 @@ h4 {
     background-position: center;
     margin-bottom: 20px;
   }
-  .benefits__item:before:nth-child(1)::before {
-    background-image: url(../img-icons/antenna.png);
-    background-repeat: no-repeat;
-  }
-  .benefits__item:before:nth-child(2)::before {
-    background-image: url(../img-icons/clock.png);
-    background-repeat: no-repeat;
-  }
-  .benefits__item:before:nth-child(3)::before {
-    background-image: url(../img-icons/diagram.png);
-    background-repeat: no-repeat;
-  }
-  .benefits__item:before:nth-child(4)::before {
-    background-image: url(../img-icons/astronaut.png);
-    background-repeat: no-repeat;
-  }
 }
 
 @media screen and (min-width: 768px) {
-  .benefits__item:before {
+  .benefits__item::before {
     width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits__item:before {
+  .benefits__item::before {
     width: 270px;
   }
+}
+
+.benefits__item:nth-child(1)::before {
+  background-image: url(../../img-icons/antenna.png);
+  background-repeat: no-repeat;
+}
+
+.benefits__item:nth-child(2)::before {
+  background-image: url(../img-icons/clock.png);
+  background-repeat: no-repeat;
+}
+
+.benefits__item:nth-child(3)::before {
+  background-image: url(../img-icons/diagram.png);
+  background-repeat: no-repeat;
+}
+
+.benefits__item:nth-child(4)::before {
+  background-image: url(../img-icons/astronaut.png);
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 480px) {
@@ -529,6 +536,7 @@ h4 {
     text-align: center;
     font-weight: 400;
     color: #757575;
+    text-align: left;
   }
 }
 
@@ -728,20 +736,53 @@ h4 {
   transition: color 500ms;
 }
 
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: 210px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
+}
+
 .clients__item:hover {
   color: #2196f3;
 }
 
-.clients__background {
-  width: 170px;
-  height: 90px;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  -webkit-transition: -webkit-box-shadow 1000ms;
-  transition: -webkit-box-shadow 1000ms;
-  transition: box-shadow 1000ms;
-  transition: box-shadow 1000ms, -webkit-box-shadow 1000ms;
+@media screen and (min-width: 480px) {
+  .clients__background {
+    width: 210px;
+    height: 92px;
+    -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    -webkit-transition: -webkit-box-shadow 1000ms;
+    transition: -webkit-box-shadow 1000ms;
+    transition: box-shadow 1000ms;
+    transition: box-shadow 1000ms, -webkit-box-shadow 1000ms;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__background {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__background {
+    width: 170px;
+  }
 }
 
 .clients__background:hover {
@@ -797,12 +838,37 @@ h4 {
   color: #757575;
 }
 
-.footer__item {
-  margin-right: 70px;
+.footer__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 120px;
 }
 
-.footer__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .footer__list {
+    gap: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    gap: 70px;
+  }
+}
+
+.footer__item {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item:nth-child(2) {
+  margin-top: -30px;
+}
+
+.footer__item:nth-child(3) {
+  margin-top: -30px;
 }
 
 .join-to-us {
@@ -816,11 +882,8 @@ h4 {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
+  text-transform: uppercase;
   color: #fff;
-}
-
-.join-to-us-headline:last-child {
-  margin-right: 0;
 }
 
 .join-to-us__item {
@@ -849,28 +912,54 @@ h4 {
   background-color: #2196f3;
 }
 
-.sign-up-headline {
+.sign-up {
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-.sign-up-input {
+@media screen and (min-width: 1200px) {
+  .sign-up__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.sign-up__item:first-child {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up__item:first-child {
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
+.sign-up__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  width: 358px;
+  width: 450px;
   height: 50px;
   -webkit-transition: border-color 500ms;
   transition: border-color 500ms;
 }
 
-.sign-up-input:hover {
+.sign-up__input:hover {
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up__input {
+    width: 358px;
+  }
 }
 
 .sign-up-button {
@@ -888,7 +977,7 @@ h4 {
   display: flex;
 }
 
-.sign-up-button__sign-up {
+.sign-up-button__conect {
   color: #fff;
   font-size: 16px;
   font-family: 'Roboto', serif;

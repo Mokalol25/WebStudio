@@ -1,5 +1,3 @@
 @mixin text($text-color) {
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 500ms;
+  color: $text-color;
 }

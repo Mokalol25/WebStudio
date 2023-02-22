@@ -53,6 +53,9 @@
 }
 .header__link {
   @include text($text-color: black);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 500ms;
 }
 .contacts {
   font-weight: 500;
@@ -61,6 +64,9 @@
 }
 .contacts__contact {
   @include text($text-color: #757575);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 500ms;
   &:first-child {
     margin-right: 50px;
   }
@@ -70,6 +76,9 @@
 }
 .contacts__link {
   @include text($text-color: #757575);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 500ms;
   &:hover {
     color: $text-hover-color;
   }

@@ -2,16 +2,14 @@
   padding-top: 94px;
   padding-bottom: 50px;
 }
-.portfolio-buttons {
-}
 .portfolio-buttons__list {
   list-style: none;
   @extend %flex;
-}
-.portfolio-buttons__item {
-  margin-left: 8px;
-  &:first-child {
-    margin-left: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: left;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
 .portfolio-buttons__link {
