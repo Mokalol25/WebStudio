@@ -1,21 +1,19 @@
 .hero-section {
-  @media screen and (min-width: 480px) {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 
-    border-radius: 4px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/background-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  border-radius: 4px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-section .container {
   padding-top: 118px;
@@ -61,14 +59,16 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 528px;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 40px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
   @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }
 .backdrop {
@@ -81,10 +81,6 @@
   height: 100%;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: 1000ms;
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
 }
 .is-hidden {
   opacity: 0;
@@ -93,15 +89,25 @@
 .backdrop__close {
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-left: 490px;
+  margin-top: 50px;
+  margin-left: 290px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 50%;
   transition: color 500ms;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 370px) {
+    margin-left: 340px;
+  }
+  @media screen and (min-width: 400px) {
+    margin-left: 370px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-top: 40px;
+    margin-left: 412px;
   }
   @media screen and (min-width: 1200px) {
+    margin-top: 16px;
+    margin-left: 490px;
   }
 }
 .backdrop__close:hover .backdrop__close-svg {
@@ -135,23 +141,35 @@
   font-size: 12px;
   margin-bottom: 4px;
   color: #757575;
-  margin-right: 800px;
-  margin-left: 40px;
+  @media screen and (min-width: 480px) {
+    margin-right: 800px;
+    margin-left: 40px;
+  }
 }
 .your-information__svg {
   position: absolute;
   margin-top: 18px;
-  left: 55px;
+  left: 15px;
   fill: currentColor;
+  @media screen and (min-width: 480px) {
+    left: 55px;
+  }
 }
 .your-information__input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 10px;
   transition: border-color 500ms;
+  padding-left: 35px;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
   &:hover {
     border-color: $border-hover-color;
   }
@@ -167,12 +185,18 @@
 }
 .your-information__coments {
   height: 120px;
-  width: 448px;
+  width: 100%;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
   transition: border-color 500ms;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
   &:hover {
     border-color: $border-hover-color;
   }
@@ -187,11 +211,16 @@
   @extend %flex;
 }
 .checkbox__agree {
-  margin-left: 52px;
-  margin-right: 8.36px;
   width: 16px;
   height: 15px;
   background: #212121;
+  @media screen and (min-width: 480px) {
+    padding-left: 52px;
+    margin-right: 8.36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 52px;
+  }
 }
 .checkbox__document-condition {
   color: $text-color;

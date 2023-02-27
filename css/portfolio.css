@@ -322,8 +322,14 @@ h4 {
 }
 
 .services__img {
-  width: 450px;
+  width: 100%;
   height: 294px;
+}
+
+@media screen and (min-width: 768px) {
+  .services__img {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -511,20 +517,26 @@ h4 {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  width: 450px;
+  width: 100%;
   height: 50px;
   -webkit-transition: border-color 500ms;
   transition: border-color 500ms;
 }
 
-.sign-up__input:hover {
-  border-color: #2196f3;
+@media screen and (min-width: 480px) {
+  .sign-up__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .sign-up__input {
     width: 358px;
   }
+}
+
+.sign-up__input:hover {
+  border-color: #2196f3;
 }
 
 .sign-up-button {

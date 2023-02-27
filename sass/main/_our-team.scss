@@ -25,6 +25,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team__image-worker {
+  width: 100%;
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 460px;
@@ -50,6 +51,7 @@
   @extend %flex;
   margin-top: 30px;
   margin-bottom: 44px;
+  gap: 10px;
 }
 .social__item {
   width: 44px;

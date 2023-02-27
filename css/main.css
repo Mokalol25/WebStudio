@@ -193,19 +193,17 @@ h4 {
   border: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 480px) {
-  .hero-section {
-    text-align: center;
-    width: 100%;
-    -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background-img.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.hero-section {
+  text-align: center;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-section .container {
@@ -266,12 +264,24 @@ h4 {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 528px;
+  width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding-bottom: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .background-modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .background-modal {
+    width: 528px;
+  }
 }
 
 .backdrop {
@@ -297,13 +307,39 @@ h4 {
 .backdrop__close {
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-left: 490px;
+  margin-top: 50px;
+  margin-left: 290px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: color 500ms;
   transition: color 500ms;
+}
+
+@media screen and (min-width: 370px) {
+  .backdrop__close {
+    margin-left: 340px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .backdrop__close {
+    margin-left: 370px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop__close {
+    margin-top: 40px;
+    margin-left: 412px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop__close {
+    margin-top: 16px;
+    margin-left: 490px;
+  }
 }
 
 .backdrop__close:hover .backdrop__close-svg {
@@ -348,19 +384,30 @@ h4 {
   font-size: 12px;
   margin-bottom: 4px;
   color: #757575;
-  margin-right: 800px;
-  margin-left: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .your-information__label {
+    margin-right: 800px;
+    margin-left: 40px;
+  }
 }
 
 .your-information__svg {
   position: absolute;
   margin-top: 18px;
-  left: 55px;
+  left: 15px;
   fill: currentColor;
 }
 
+@media screen and (min-width: 480px) {
+  .your-information__svg {
+    left: 55px;
+  }
+}
+
 .your-information__input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -368,6 +415,19 @@ h4 {
   margin-bottom: 10px;
   -webkit-transition: border-color 500ms;
   transition: border-color 500ms;
+  padding-left: 35px;
+}
+
+@media screen and (min-width: 480px) {
+  .your-information__input {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .your-information__input {
+    width: 448px;
+  }
 }
 
 .your-information__input:hover {
@@ -389,13 +449,25 @@ h4 {
 
 .your-information__coments {
   height: 120px;
-  width: 448px;
+  width: 100%;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
   -webkit-transition: border-color 500ms;
   transition: border-color 500ms;
+}
+
+@media screen and (min-width: 480px) {
+  .your-information__coments {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .your-information__coments {
+    width: 448px;
+  }
 }
 
 .your-information__coments:hover {
@@ -410,11 +482,22 @@ h4 {
 }
 
 .checkbox__agree {
-  margin-left: 52px;
-  margin-right: 8.36px;
   width: 16px;
   height: 15px;
   background: #212121;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox__agree {
+    padding-left: 52px;
+    margin-right: 8.36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__agree {
+    padding-left: 52px;
+  }
 }
 
 .checkbox__document-condition {
@@ -449,6 +532,10 @@ h4 {
   gap: 30px;
 }
 
+.benefits__item {
+  width: 100%;
+}
+
 @media screen and (min-width: 480px) {
   .benefits__item {
     width: 450px;
@@ -471,16 +558,20 @@ h4 {
   margin-right: 0;
 }
 
+.benefits__item::before {
+  display: block;
+  content: '';
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 480px) {
   .benefits__item::before {
-    display: block;
-    content: '';
-    background-color: #f5f4fa;
-    border-radius: 4px;
     width: 450px;
-    height: 120px;
-    background-position: center;
-    margin-bottom: 20px;
   }
 }
 
@@ -497,7 +588,7 @@ h4 {
 }
 
 .benefits__item:nth-child(1)::before {
-  background-image: url(../../img-icons/antenna.png);
+  background-image: url(../img-icons/antenna.png);
   background-repeat: no-repeat;
 }
 
@@ -642,6 +733,10 @@ h4 {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__image-worker {
+  width: 100%;
+}
+
 @media screen and (min-width: 480px) {
   .team__image-worker {
     width: 450px;
@@ -676,6 +771,7 @@ h4 {
 .social {
   margin-top: 30px;
   margin-bottom: 44px;
+  gap: 10px;
 }
 
 .social__item {
@@ -759,17 +855,21 @@ h4 {
   color: #2196f3;
 }
 
+.clients__background {
+  width: 100px;
+  height: 92px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow 1000ms;
+  transition: -webkit-box-shadow 1000ms;
+  transition: box-shadow 1000ms;
+  transition: box-shadow 1000ms, -webkit-box-shadow 1000ms;
+}
+
 @media screen and (min-width: 480px) {
   .clients__background {
     width: 210px;
-    height: 92px;
-    -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    -webkit-transition: -webkit-box-shadow 1000ms;
-    transition: -webkit-box-shadow 1000ms;
-    transition: box-shadow 1000ms;
-    transition: box-shadow 1000ms, -webkit-box-shadow 1000ms;
   }
 }
 
@@ -946,20 +1046,26 @@ h4 {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  width: 450px;
+  width: 100%;
   height: 50px;
   -webkit-transition: border-color 500ms;
   transition: border-color 500ms;
 }
 
-.sign-up__input:hover {
-  border-color: #2196f3;
+@media screen and (min-width: 480px) {
+  .sign-up__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .sign-up__input {
     width: 358px;
   }
+}
+
+.sign-up__input:hover {
+  border-color: #2196f3;
 }
 
 .sign-up-button {
