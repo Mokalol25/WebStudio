@@ -19,11 +19,20 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a href="/" class="webstudio">
           <span class="web">Web</span><span class="studio">Studio</span></a
         >
+        <button
+          type="button"
+          class="header__mobile-menu"
+          data-open-mobile-modal
+        >
+          <svg class="header__mobile-menu-svg">
+            <use href="./subol-defs.img/header-menu.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link header__link-box" href="/">Студія</a>
@@ -55,8 +64,70 @@
             >
           </li>
         </ul>
+
+        <div class="header__backdrop header__is-hidden" data-mobile-backdrop>
+          <form class="mobile-modal">
+            <button
+              type="button"
+              class="mobile-modal__close-button"
+              data-close-mobile-modal
+            >
+              <svg class="mobile-modal__close-svg">
+                <use href="./subol-defs.img/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-modal__main-list">
+              <li class="mobile-modal__main-item">
+                <a href="" class="mobile-modal__main-logo">Студія</a>
+              </li>
+              <li class="mobile-modal__main-item">
+                <a href="./porfolio.html" class="mobile-modal__main-logo"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-modal__main-item">
+                <a href="" class="mobile-modal__main-logo">Контакти</a>
+              </li>
+            </ul>
+            <ul class="mobile-modal__conect-list">
+              <li class="mobile-modal__conect-item">
+                <a href="tel:+380961111111" class="mobile-modal__tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-modal__conect-item">
+                <a href="mailto:info@devstudio.com" class="mobile-modal__gmail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-modal__socials-list">
+              <li class="mobile-modal__socials-item">
+                <h4 class="mobile-modal__social">Instagram</h4>
+              </li>
+              <li class="mobile-modal__socials-item">
+                <div class="mobile-modal__cross"></div>
+              </li>
+              <li class="mobile-modal__socials-item">
+                <h4 class="mobile-modal__social">Twitter</h4>
+              </li>
+              <li class="mobile-modal__socials-item">
+                <div class="mobile-modal__cross"></div>
+              </li>
+              <li class="mobile-modal__socials-item">
+                <h4 class="mobile-modal__social">Facebook</h4>
+              </li>
+              <li class="mobile-modal__socials-item">
+                <div class="mobile-modal__cross"></div>
+              </li>
+              <li class="mobile-modal__socials-item">
+                <h4 class="mobile-modal__social">LinkedIn</h4>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
-    </header> -->
+    </header>
     <!-- main -->
     <main>
       <!-- section-hero -->
@@ -162,7 +233,7 @@
         <div class="container">
           <ul class="benefits">
             <li class="benefits__item">
-              <h5 class="benefits__benefit">УВАГА ДО ЛЕТАЛЕЙ</h5>
+              <h5 class="benefits__benefit">УВАГА ДО ДЕТАЛЕЙ</h5>
               <p class="benefits__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
@@ -572,5 +643,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-modal.js"></script>
   </body>
 </html>
