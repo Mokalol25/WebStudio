@@ -67,63 +67,69 @@
 
         <div class="header__backdrop header__is-hidden" data-mobile-backdrop>
           <form class="mobile-modal">
-            <button
-              type="button"
-              class="mobile-modal__close-button"
-              data-close-mobile-modal
-            >
-              <svg class="mobile-modal__close-svg">
-                <use href="./subol-defs.img/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
-            <ul class="mobile-modal__main-list">
-              <li class="mobile-modal__main-item">
-                <a href="" class="mobile-modal__main-logo">Студія</a>
-              </li>
-              <li class="mobile-modal__main-item">
-                <a href="./porfolio.html" class="mobile-modal__main-logo"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="mobile-modal__main-item">
-                <a href="" class="mobile-modal__main-logo">Контакти</a>
-              </li>
-            </ul>
-            <ul class="mobile-modal__conect-list">
-              <li class="mobile-modal__conect-item">
-                <a href="tel:+380961111111" class="mobile-modal__tel"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="mobile-modal__conect-item">
-                <a href="mailto:info@devstudio.com" class="mobile-modal__gmail"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mobile-modal__socials-list">
-              <li class="mobile-modal__socials-item">
-                <h4 class="mobile-modal__social">Instagram</h4>
-              </li>
-              <li class="mobile-modal__socials-item">
-                <div class="mobile-modal__cross"></div>
-              </li>
-              <li class="mobile-modal__socials-item">
-                <h4 class="mobile-modal__social">Twitter</h4>
-              </li>
-              <li class="mobile-modal__socials-item">
-                <div class="mobile-modal__cross"></div>
-              </li>
-              <li class="mobile-modal__socials-item">
-                <h4 class="mobile-modal__social">Facebook</h4>
-              </li>
-              <li class="mobile-modal__socials-item">
-                <div class="mobile-modal__cross"></div>
-              </li>
-              <li class="mobile-modal__socials-item">
-                <h4 class="mobile-modal__social">LinkedIn</h4>
-              </li>
-            </ul>
+            <div class="mobile-modal__flex">
+              <button
+                type="button"
+                class="mobile-modal__close-button"
+                data-close-mobile-modal
+              >
+                <svg class="mobile-modal__close-svg">
+                  <use href="./subol-defs.img/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mobile-modal__main-list">
+                <li class="mobile-modal__main-item">
+                  <a href="" class="mobile-modal__main-logo">Студія</a>
+                </li>
+                <li class="mobile-modal__main-item">
+                  <a href="./porfolio.html" class="mobile-modal__main-logo"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-modal__main-item">
+                  <a href="" class="mobile-modal__main-logo">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-modal__flex">
+              <ul class="mobile-modal__conect-list">
+                <li class="mobile-modal__conect-item">
+                  <a href="tel:+380961111111" class="mobile-modal__tel"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-modal__conect-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-modal__gmail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-modal__socials-list">
+                <li class="mobile-modal__socials-item">
+                  <h4 class="mobile-modal__social">Instagram</h4>
+                </li>
+                <li class="mobile-modal__socials-item">
+                  <div class="mobile-modal__cross"></div>
+                </li>
+                <li class="mobile-modal__socials-item">
+                  <h4 class="mobile-modal__social">Twitter</h4>
+                </li>
+                <li class="mobile-modal__socials-item">
+                  <div class="mobile-modal__cross"></div>
+                </li>
+                <li class="mobile-modal__socials-item">
+                  <h4 class="mobile-modal__social">Facebook</h4>
+                </li>
+                <li class="mobile-modal__socials-item">
+                  <div class="mobile-modal__cross"></div>
+                </li>
+                <li class="mobile-modal__socials-item">
+                  <h4 class="mobile-modal__social">LinkedIn</h4>
+                </li>
+              </ul>
+            </div>
           </form>
         </div>
       </div>
@@ -135,7 +141,8 @@
         <div class="container">
           <div>
             <h1 class="hero-section__logo">
-              ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
+              ЕФЕКТИВНІ РІШЕННЯ<br />
+              ДЛЯ ВАШОГО БІЗНЕСУ
             </h1>
             <button class="hero-section__button" type="button" data-open-modal>
               Замовити послугу

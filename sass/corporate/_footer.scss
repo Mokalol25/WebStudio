@@ -40,9 +40,9 @@
 .footer__list {
   @extend %flex;
   flex-wrap: wrap;
-  gap: 120px;
+  gap: 60px;
   @media screen and (min-width: 768px) {
-    gap: 165px;
+    gap: 120px;
   }
   @media screen and (min-width: 1200px) {
     gap: 70px;
@@ -56,6 +56,9 @@
   }
   &:nth-child(3) {
     margin-top: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 .join-to-us {
@@ -74,6 +77,9 @@
   height: 44px;
   margin-right: 10px;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
 }
 .join-to-us__defs {
   fill: #fff;
@@ -118,7 +124,8 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: none;
-  width: 100%;
+  padding-left: 10px;
+  width: 350px;
   height: 50px;
   transition: border-color 500ms;
   @media screen and (min-width: 480px) {
