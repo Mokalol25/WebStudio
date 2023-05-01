@@ -5,13 +5,11 @@
   padding-bottom: 94px;
 }
 .benefits {
-  @extend %flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  gap: 30px;
+  @include grids-list(30px);
 }
 .benefits__item {
   width: 100%;
+  @include grids-item(4, 30px);
   @media screen and (min-width: 480px) {
     width: 450px;
   }
@@ -20,9 +18,6 @@
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-  }
-  &:first-child {
-    margin-right: 0;
   }
   &::before {
     display: block;

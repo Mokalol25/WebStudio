@@ -13,14 +13,13 @@
   font-size: 36px;
 }
 .team {
-  @extend %flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @include grids-list(30px);
 }
 .team__item {
   text-align: center;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
+  @include grids-item(4, 30px);
   transition: 500ms;
   &:hover {
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -54,7 +53,7 @@
 .social {
   @extend %flex;
   margin-top: 30px;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
   gap: 10px;
 }
 .social__item {

@@ -11,13 +11,14 @@
 }
 .portfolio-buttons__list {
   list-style: none;
-  @extend %flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  @include grids-list(30px);
   justify-content: left;
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
+}
+.portfolio-buttons__item {
+  @include grids-item(5, 30px);
 }
 .portfolio-buttons__link {
   background-color: #f5f4fa;

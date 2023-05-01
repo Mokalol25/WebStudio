@@ -1,4 +1,4 @@
-.header .container, .header__list, .portfolio-buttons__list, .services__list, .footer__list, .join-to-us__background {
+.header .container, .header__list, .footer__list, .join-to-us__background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,9 +447,15 @@ h4 {
 
 .portfolio-buttons__list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -461,6 +467,11 @@ h4 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.portfolio-buttons__item {
+  -ms-flex-preferred-size: calc((100% - $items * $gap) / $items);
+      flex-basis: calc((100% - $items * $gap) / $items);
 }
 
 .portfolio-buttons__link {
@@ -503,8 +514,14 @@ h4 {
 
 .services__list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 25px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -515,6 +532,8 @@ h4 {
   background: #ffffff;
   border-radius: 1px;
   border: 1px solid #eeeeee;
+  -ms-flex-preferred-size: calc((100% - $items * $gap) / $items);
+      flex-basis: calc((100% - $items * $gap) / $items);
 }
 
 .services__box {

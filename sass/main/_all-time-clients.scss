@@ -10,9 +10,7 @@
   margin-bottom: 50px;
 }
 .clients__list {
-  @extend %flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @include grids-list(30px);
 }
 .clients__svg {
   fill: currentColor;
