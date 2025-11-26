@@ -16,26 +16,34 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="container">
-        <a href="/" class="webstudio">
+        <a
+          href="/"
+          class="webstudio"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
           <span class="web">Web</span><span class="studio">Studio</span></a
         >
         <button
           type="button"
           class="header__mobile-menu"
           data-open-mobile-modal
+          data-aos="fade-left"
+          data-aos-duration="800"
         >
           <svg class="header__mobile-menu-svg">
             <use href="./subol-defs.img/header-menu.svg#icon-menu"></use>
           </svg>
         </button>
-        <ul class="header__list">
+        <ul class="header__list" data-aos="fade-left" data-aos-duration="800">
           <li class="header__item">
-            <a class="header__link header__link-box" href="/">Студія</a>
+            <a class="header__link header__link-box" href="#">Студія</a>
           </li>
           <li class="header__item">
             <a class="header__link header__link-box" href="./porfolio.html"
@@ -43,7 +51,7 @@
             >
           </li>
           <li class="header__item">
-            <a class="header__link header__link-box" href="/">Контакти</a>
+            <a class="header__link header__link-box" href="#">Контакти</a>
           </li>
         </ul>
         <ul class="contacts">
@@ -137,7 +145,11 @@
     <!-- main -->
     <main>
       <!-- section-hero -->
-      <section class="hero-section">
+      <section
+        class="hero-section"
+        data-aos="fade-left"
+        data-aos-duration="800"
+      >
         <div class="container">
           <div>
             <h1 class="hero-section__logo">
@@ -239,27 +251,43 @@
       <section class="benefits-section">
         <div class="container">
           <ul class="benefits">
-            <li class="benefits__item">
+            <li
+              class="benefits__item"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
               <h5 class="benefits__benefit">УВАГА ДО ДЕТАЛЕЙ</h5>
               <p class="benefits__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="benefits__item">
+            <li
+              class="benefits__item"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
               <h5 class="benefits__benefit">ПУНКТУАЛЬНІСТЬ</h5>
               <p class="benefits__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="benefits__item">
+            <li
+              class="benefits__item"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
               <h5 class="benefits__benefit">ПЛАНУВАННЯ</h5>
               <p class="benefits__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefits__item">
+            <li
+              class="benefits__item"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
               <h5 class="benefits__benefit">СУЧАСНІ ТЕХНОЛОГІЇ</h5>
               <p class="benefits__text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -274,7 +302,11 @@
       <section class="what-we-do">
         <div class="container">
           <h2 class="what-we-do__headline">Чим ми займаємося</h2>
-          <ul class="what-we-do__list">
+          <ul
+            class="what-we-do__list"
+            data-aos="fade-top"
+            data-aos-duration="800"
+          >
             <li class="what-we-do__item">
               <div class="overley">
                 <div class="overley__background">
@@ -335,7 +367,11 @@
         <div class="container">
           <h2 class="our-team">Наша команда</h2>
           <ul class="team">
-            <li class="team__item">
+            <li
+              class="team__item"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
               <picture>
                 <source
                   srcset="
@@ -401,7 +437,11 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item">
+            <li
+              class="team__item"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
               <picture>
                 <source
                   srcset="
@@ -467,7 +507,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item">
+            <li class="team__item" data-aos="fade-left" data-aos-duration="800">
               <picture>
                 <source
                   srcset="
@@ -533,7 +573,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item">
+            <li class="team__item" data-aos="fade-left" data-aos-duration="800">
               <picture>
                 <source
                   srcset="
@@ -604,7 +644,7 @@
       </section>
 
       <!-- all time clients -->
-      <section class="clients">
+      <section class="clients" data-aos="fade-top" data-aos-duration="800">
         <div class="container">
           <h3 class="clients__headline">Постійні клієнти</h3>
           <ul class="clients__list">
@@ -667,7 +707,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-down" data-aos-duration="800">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
@@ -770,5 +810,9 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
